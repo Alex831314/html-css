@@ -1,0 +1,30 @@
+table,
+th,
+td {
+  border: 1px solid black;
+}
+
+table {
+  width: 100%;
+}
+
+table, caption {
+  padding: 10px;
+  font-size:large;
+}
+
+#back_ground {
+  background-image: url(../photos/images.png);
+}
+
+table[back_ground] {
+  background-image:url(../photos/download.png);
+}
+
+#internlas {
+  border-radius: 20px 40px;
+  border-top: dotted 5px darkcyan;
+  border-bottom: dotted 5px rgb(0, 9, 139);
+  border-left: greenyellow 7px dashed;
+  border-right: greenyellow 7px dashed;
+}

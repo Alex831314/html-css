@@ -1,0 +1,31 @@
+.back-tap {
+    /* Скрол ВСЁ ВРЕМЯ находится на ОДНОМ Месте */
+    position: fixed;
+    /* Два НИЖНИХ стиля указывают ПОЛОЖЕНИЕ скрола - Справа Внизу, с отсупом */
+    /* для скрытия -- сперва используем   bottom: -50px */
+    /* bottom: -50px; */
+    bottom:50px;
+    right: 50px;
+    background-color:dodgerblue;
+    width: 90px;
+    height: 50px;
+    display: flex;
+    /* НЕмного Центруем */
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  
+    /* мои СобственныЕ стили */
+    border-radius: 15px;
+    opacity: 0.6;
+    font-size: large;
+    color: darkblue;
+    transition: 0.4s linear;
+  }
+  
+  /* когда будет добавляться Класс active - и если он будет активен -- 
+         то наш bottom будет 50px
+           Если класс active будет НЕАКТИВЕН -- он будет скрываться Справа (bottom: -50px) */
+  /* .back-tap.active {
+    bottom: 50px;
+  } */

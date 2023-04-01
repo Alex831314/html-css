@@ -1,0 +1,284 @@
+/* там где "*" (там пишется какой-то текст) - это СЕЛЕКТОР
+  color - это СВОЙСТВО
+ а После ":" - это ЗНАЧЕНИЕ  
+ значок Звёздочка - значит что это свойство применяется для ВСЕХ Тегов"*"*/
+
+/* * {
+    color: rgb(0, 115, 128);
+} */
+
+/* задавая СЕЛЕКТОР можно Обращаться НАПРЯМУЮ к Тегу */
+span {
+  color: aqua;
+}
+
+/* обращение к конкретному КЛАССУ 
+применяется -- К КАЖДОМУ ЭЛЕМЕНТУ данного класса --- 
+ ДАЖЕ --- если у него есть Не ТОЛЬКО ЭТОТ но и Друг/ой/ие классы*/
+.element {
+  background-color: chocolate;
+}
+
+/* обращение ПО ИДЕНТИФИКАТОРУ ---
+  -- через # */
+#title {
+  background-color: chartreuse;
+}
+
+/* обращение к АТРИБУТУ тега!!
+   МЕНЯЕТ ЗНАЧЕНИЕ (например цвет) которое уже ПРИСВОЕНО, через Класс например. 
+   З. Атрибута, в данном случае - title - НЕ ВАЖНО*/
+p[title] {
+  background-color: aquamarine;
+}
+/* Обращение к КОНКРЕТНОМУ З.-ю Атрибутта */
+p[title='text4'] {
+  background-color: darkcyan;
+}
+
+.logo {
+  background-image: url(../photos/download.png);
+}
+.logo1 {
+  background-image: url(../photos/download.png);
+  background-repeat: no-repeat;
+}
+
+/* ПОЯВЛЕНИЕ логотипа/КАРТИНКИ в CSS БЕЗ html-tag <img> !!!! */
+.logo2 {
+  background-image: url(../photos/download.png);
+  background-repeat: no-repeat;
+  /* ОБЯЗАТЕЛЬНЫЕ Свойства: */
+  height: 200px;
+  width: 400px;
+}
+
+.logo3 {
+  background-image: url(../photos/download.jpg);
+  background-repeat: no-repeat;
+  height: 220px;
+  width: 700px;
+  border: green dotted 3px;
+}
+.logo4 {
+  background-image: url(../photos/download.jpg);
+  background-repeat: no-repeat;
+  height: 220px;
+  width: 700px;
+  border: black solid 5px;
+  /* свойства добавленные через ИНСТРУМЕНТЫ РАЗРАБОТЧИКА (ГУГЛ КОНСОЛИ) - там просмотрены результаты - скопированы и Вставлены сюда  в CSS-файл */
+  border-right-width: 41px;
+  border-left-width: 40px;
+  border-bottom-width: 50px;
+  border-top-width: 20.444;
+  border-top-width: 20px;
+}
+.logo5 {
+  background-image: url(../photos/download.jpg);
+  background-repeat: no-repeat;
+  height: 220px;
+  width: 700px;
+  border: violet solid 5px;
+  /* свойства добавленные через ИНСТРУМЕНТЫ РАЗРАБОТЧИКА (ГУГЛ КОНСОЛИ) - там просмотрены результаты - скопированы и Вставлены сюда  в CSS-файл */
+  border-top-width: 20px;
+  border-left-width: 20px;
+  border-right-width: 20px;
+  border-bottom-width: 20px;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-left: 100px;
+}
+
+.trafic-light {
+  margin-left: 20px;
+  margin-bottom: 40px;
+  /* display: flex; */
+}
+
+.t-l-1 {
+  border: 2px black solid;
+  background-color: black;
+  height: 65px;
+  width: 75px;
+}
+.t-l-2 {
+  border: 2px black solid;
+  background-color: black;
+  height: 65px;
+  width: 75px;
+}
+.t-l-3 {
+  border: 2px black solid;
+  background-color: black;
+  height: 70px;
+  width: 75px;
+}
+
+.trafic-light1 {
+  border: black solid 1px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  background-color: red;
+  padding: 2px;
+  border-top: 10px black solid;
+  border-bottom: 10px black solid;
+  border-right: 10px black solid;
+  border-left: 10px black solid;
+}
+.trafic-light2 {
+  border: black solid 1px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  background-color: rgb(242, 255, 0);
+  border-top: 10px black solid;
+  border-bottom: 10px black solid;
+  border-right: 10px black solid;
+  border-left: 10px black solid;
+}
+.trafic-light3 {
+  border: black solid 1px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  background-color: rgb(13, 255, 0);
+  border-top: 10px black solid;
+  border-bottom: 10px black solid;
+  border-right: 10px black solid;
+  border-left: 10px black solid;
+}
+
+.trafic-light11 {
+  border: black solid 1px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  background-color: red;
+}
+.trafic-light12 {
+  border: black solid 1px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  background-color: yellow;
+}
+.trafic-light13 {
+  border: black solid 1px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  background-color: rgb(38, 255, 0);
+}
+
+.flex {
+  display: flex;
+}
+#main_trafic_light {
+  border: dashed 5px aqua;
+  padding-top: 40px;
+  align-items: center;
+  justify-content: center;
+}
+#properties_1 {
+  margin-right: 40px;
+}
+#properties_2 {
+  margin-right: 40px;
+}
+
+#our_flex {
+  display: flex;
+}
+#our_flex div {
+  flex: 0 auto 0.033;
+}
+.image-new {
+  height: 250px;
+  width: 350px;
+  align-items: center;
+  justify-content: center;
+  margin-right: 40px;
+}
+
+#our_flex1 {
+  display: flex;
+}
+.image_size {
+  height: 250px;
+  width: 350px;
+  border-radius: 25px;
+}
+.image_border11 {
+  border: dashed 14px aqua;
+}
+.image_12 {
+  margin-left: 20px;
+  margin-top: 150px;
+}
+.image_border12 {
+  border: groove violet 10px;
+  padding: 2px;
+  border-right-color: chartreuse;
+  border-bottom-color: chartreuse;
+}
+.image_border13 {
+  border: outset darkcyan 10px;
+  padding: 2px;
+}
+
+.image_13 {
+  margin-left: 20px;
+  margin-top: 250px;
+}
+
+#work_pict {
+  display: flex;
+  border: 10px solid darkturquoise;
+  padding: 10px;
+}
+.pict {
+  height: 200px;
+  width: 250px;
+  border-radius: 20px 30px;
+  padding: 15px;
+}
+.text_img {
+  text-align: center;
+}
+.border01{
+  border: violet 4px outset;
+  padding: 30px;
+  font-family:monospace;
+  font-size: 15px;
+}
+.border02{
+  border: violet 4px outset;
+  padding: 30px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 13px;
+  font-weight: bolder;
+  line-height: 25px;
+  text-align:end;
+}
+.border03{
+  border: violet 4px outset;
+  padding: 30px;
+  text-align: justify;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+
+.size-pict img {
+  height: 200px;
+  width: 300px;
+  /* border: 1px red solid */
+}
+.marg1 {
+  margin: 20px;
+}

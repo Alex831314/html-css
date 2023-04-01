@@ -1,0 +1,167 @@
+/* *,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+} */
+
+html,
+body {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.nav_menu {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 50;
+}
+
+.nav_menu:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: aqua;
+}
+.links {
+  list-style: none;
+}
+
+.photos {
+  max-width: 250px;
+  height: 250px;
+  border: 3px red solid;
+  padding: 2px;
+}
+
+.link_menu {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  align-items: center;
+}
+
+.link {
+  display: flex;
+  padding: 20px;
+  text-transform: uppercase;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+mark {
+  background-color: aqua;
+}
+.add-color {
+  background-color: blueviolet;
+}
+
+.icon_style {
+}
+/* Стилизация скрола */
+.back-to-tap {
+  /* Скрол ВСЁ ВРЕМЯ находится на ОДНОМ Месте */
+  position: fixed;
+  /* Два НИЖНИХ стиля указывают ПОЛОЖЕНИЕ скрола - Справа Внизу, с отсупом */
+  /* для скрытия -- сперва используем   bottom: -50px */
+  bottom: -50px;
+  /* bottom:50px; */
+  right: 50px;
+  background-color: dodgerblue;
+  width: 90px;
+  height: 50px;
+  display: flex;
+  /* НЕмного Центруем */
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  /* мои СобственныЕ стили */
+  border-radius: 15px;
+  opacity: 0.6;
+  font-size: large;
+  color: darkblue;
+  transition: 0.4s linear;
+}
+
+/* когда будет добавляться Класс active - и если он будет активен -- 
+       то наш bottom будет 50px
+         Если класс active будет НЕАКТИВЕН -- он будет скрываться Справа (bottom: -50px) */
+.back-to-tap.active {
+  bottom: 50px;
+}
+
+#border {
+  border: 2px green solid;
+  border-radius: 15px;
+  padding: 5px;
+}
+
+ol[title='list'] {
+  border: 2px aqua solid;
+}
+
+#dotted {
+  border: 6px aqua dotted;
+}
+
+#dashed {
+  border: 8px blueviolet dashed;
+  padding: 7px;
+}
+
+#double {
+  border: 5px gray double;
+}
+
+.els {
+  border: 8px burlywood groove;
+}
+
+p[title='outset'] {
+  border: 7px greenyellow outset;
+  border-radius: 15px;
+  padding: 4px;
+  /* пишем border  -- и у нас появляется (выпадает) очень много значений */
+}
+p[title='top-color'] {
+  border: 7px greenyellow outset;
+  border-radius: 15px;
+  padding: 4px;
+  border-top-color: darkcyan;
+}
+
+.elements {
+  padding: 4px;
+  border-top-color: cornflowerblue;
+  border-top: 3px green solid;
+  border-bottom: 5px yellow dotted;
+  border-left: 10px darkorange outset;
+  border-right: dashed 8px blueviolet;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 40px;
+  border-bottom-left-radius: 5px;
+}
+
+.elem {
+  border-radius: 10px 40px;
+}
+.elementary {
+  border-radius: 20px 40px 60px 80px
+}

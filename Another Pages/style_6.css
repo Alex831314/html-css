@@ -1,0 +1,90 @@
+
+p{
+    font-size:large;
+}
+
+
+.font_1{
+    font-family: serif;
+    font-size: 25px;
+}
+.font_2{
+    font-family: sans-serif;
+}
+.font_3{
+    font-family:Arial;
+}
+.font_4{
+    font-family: tahoma;
+}
+.font_5{
+    font-family:monospace;
+}
+.font_6{
+    font-family:monospace;
+    font-size: 25px;
+}
+.font_7 {
+    font-family:monospace;
+    font-size: 25px;
+    font-weight:bold;
+}
+.font_8 {
+    font-family:monospace;
+    font-size: 25px;
+    font-weight:lighter;
+}
+.font_9 {
+    font-family:monospace;
+    font-size: 25px;
+    font-weight:unset;
+}
+.font_10 {
+    font-family:monospace;
+    font-size: 15px;
+    font-weight:100;
+}
+.font_11 {
+    font-family:monospace;
+    font-size: 15px;
+    font-weight:400;
+}
+.font_12 {
+    font-family:monospace;
+    font-size: 15px;
+    font-weight:900;
+}
+.font_13 {
+    font-family:Arial, Helvetica, sans-serif;
+    line-height: 30px;
+}
+.font_14 {
+    font-family:Arial, Helvetica, sans-serif;
+    line-height: 15px;
+}
+.color_mark {
+    background-color:darkcyan;
+}
+.font_15 {
+    text-decoration: underline;
+}
+.font_16 {
+    text-decoration: line-through;
+}
+.font_17 {
+    text-decoration: none;
+}
+.font_18 {
+    text-transform: uppercase;
+}
+.font_19 {
+    text-transform: lowercase;
+}
+.font_20 {
+    text-transform: capitalize;
+}
+
+
+.without_dots {
+    list-style: none;
+}

@@ -1,0 +1,30 @@
+.style {
+  background-color:chartreuse;
+}
+
+p {
+  font-size:larger;
+}
+
+.size {
+  width: 200px;
+  height: 200px;
+  border: 3px red solid;
+  padding: 2px;
+}
+
+.size {
+  display: flex;
+}
+
+.mark_color {
+  background-color: aqua;
+}
+
+.font {
+  font-size: large;
+}
+
+table, th, td {
+  border: 2px solid #000;
+}
