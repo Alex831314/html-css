@@ -1,68 +1,68 @@
-
-
 /* Стилизация скрола */
 .back-to-tap {
-    /* Скрол ВСЁ ВРЕМЯ находится на ОДНОМ Месте */
-    position: fixed;
-    /* Два НИЖНИХ стиля указывают ПОЛОЖЕНИЕ скрола - Справа Внизу, с отсупом */
-    /* для скрытия -- сперва используем   bottom: -50px */
-    bottom: -50px;
-    /* bottom:50px; */
-    right: 50px;
-    background-color: dodgerblue;
-    width: 90px;
-    height: 50px;
-    display: flex;
-    /* НЕмного Центруем */
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-  
-    /* мои СобственныЕ стили */
-    border-radius: 15px;
-    opacity: 0.6;
-    font-size: large;
-    color: darkblue;
-    transition: 0.4s linear;
-  }
-  
-  /* когда будет добавляться Класс active - и если он будет активен -- 
+  /* Скрол ВСЁ ВРЕМЯ находится на ОДНОМ Месте */
+  position: fixed;
+  /* Два НИЖНИХ стиля указывают ПОЛОЖЕНИЕ скрола - Справа Внизу, с отсупом */
+  /* для скрытия -- сперва используем   bottom: -50px */
+  bottom: -50px;
+  /* bottom:50px; */
+  right: 50px;
+  background-color: dodgerblue;
+  width: 90px;
+  height: 50px;
+  display: flex;
+  /* НЕмного Центруем */
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  /* мои СобственныЕ стили */
+  border-radius: 15px;
+  opacity: 0.6;
+  font-size: large;
+  color: darkblue;
+  transition: 0.4s linear;
+}
+
+/* когда будет добавляться Класс active - и если он будет активен -- 
          то наш bottom будет 50px
            Если класс active будет НЕАКТИВЕН -- он будет скрываться Справа (bottom: -50px) */
-  .back-to-tap.active {
-    bottom: 50px;
-  }
-
+.back-to-tap.active {
+  bottom: 50px;
+}
 
 .container {
-    height: 300px;
-    width: 300px;
-    background-color: blue;
-    padding-left: 10px;
-    padding-top: 20px;
-    margin: 30px;
-    
+  height: 300px;
+  width: 300px;
+  background-color: blue;
+  padding-top: 50px;
+  padding-left: 30px;
+  margin-top: 30px;
+  margin-left: 30px;
 }
-
 
 .square1 {
-    height: 50px;
-    width: 50px;
-    background-color: red;
-    margin-bottom: 20px;
-    /* margin-left: 100px; */
+  height: 50px;
+  width: 50px;
+  background-color: red;
+  margin-bottom: 10px;
+  position: sticky;
 }
 .square2 {
-    height: 50px;
-    width: 50px;
-    background-color: red;
+  height: 50px;
+  width: 50px;
+  background-color: red;
 }
 
-
-.container1{
+.container1 {
   width: 1000px;
   margin-left: 20px;
 }
-.f_z{
+p {
   font-size: 20px;
+}
+
+
+.summary {
+padding-left: 500px;
 }
